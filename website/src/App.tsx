@@ -169,48 +169,48 @@ function App() {
   };
   return (
     <>
-      <div className="m-2 block">
-        <div className="flex flex-row font-serif justify-between">
-          <div className="flex flex-row space-between text-red-400">
-            <h3 className="p-1.5 hover:text-red-800">Hot</h3>
-            <h3 className="p-1.5 hover:text-red-800">Iced</h3>
-            <h3 className="p-1.5 hover:text-red-800">Atlanta</h3>
-            <h3 className="p-1.5 hover:text-red-800">Pittsburgh</h3>
-            <h3 className="p-1.5 hover:text-red-800">DC</h3>
-            <h3 className="p-1.5 hover:text-red-800">New York</h3>
+      <div class="m-2 block">
+        <div class="flex flex-row font-serif justify-between">
+          <div class="flex flex-row space-between text-red-400">
+            <h3 class="p-1.5 hover:text-red-800">Hot</h3>
+            <h3 class="p-1.5 hover:text-red-800">Iced</h3>
+            <h3 class="p-1.5 hover:text-red-800">Atlanta</h3>
+            <h3 class="p-1.5 hover:text-red-800">Pittsburgh</h3>
+            <h3 class="p-1.5 hover:text-red-800">DC</h3>
+            <h3 class="p-1.5 hover:text-red-800">New York</h3>
           </div>
-          <h1 className="p-1.5 italic text-emerald-700">
+          <h1 class="p-1.5 italic text-emerald-700">
             every cafe I lived in—
           </h1>
         </div>
-        <div className="grid grid-cols-5 gap-8 p-2 font-sans">
+        <div class="grid grid-cols-5 gap-8 p-2 font-sans">
           {Object.values(cafeData).map((cafe, index) => (
             <div
               key={index}
-              className="flex flex-col justify-start cursor-pointer"
+              class="flex flex-col justify-start cursor-pointer"
             >
-              <div className="relative group w-full aspect-square">
-                <div className="absolute inset-0 flex flex-col justify-center p-4">
-                  <p className="text-left font-semibold txt-sm text-emerald-700">
+              <div class="relative group w-full aspect-square">
+                <div class="absolute inset-0 flex flex-col justify-center p-4">
+                  <p class="text-left font-semibold txt-sm text-emerald-700">
                     {cafe.name}
                   </p>
-                  <p className="text-left text-sm text-emerald-700">
+                  <p class="text-left text-sm text-emerald-700">
                     {cafe.drink}
                   </p>
-                  <p className="text-left text-sm text-emerald-700">
+                  <p class="text-left text-sm text-emerald-700">
                     {cafe.rating}
                   </p>
-                  <p className="text-left text-xs italic text-emerald-700">
+                  <p class="text-left text-xs italic text-emerald-700">
                     {cafe.musings}
                   </p>
                 </div>
                 <img
-                  className="absolute w-full h-full aspect-square object-cover transition-opacity opacity-100 group-hover:opacity-20 duration-300"
+                  class="absolute w-full h-full aspect-square object-cover transition-opacity opacity-100 group-hover:opacity-20 duration-300"
                   src={cafe.image}
                   alt={cafe.name}
                 />
               </div>
-              <p className="font-serif text-red-400 text-sm mt-2">
+              <p class="font-serif text-red-400 text-sm mt-2">
                 {cafe.name}
               </p>
             </div>
@@ -221,7 +221,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <p className="font-sans text-semibold italic text-emerald-700 text-center">
+          <p class="font-sans text-semibold italic text-emerald-700 text-center">
             powered by love and caffeine, with mini
           </p>
         </a>
